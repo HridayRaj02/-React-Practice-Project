@@ -1,38 +1,500 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainheader {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 3px 1px;
+    /* z-index: 999; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerleft {
+    letter-spacing: 3px;
+    font-size: 29px;
+    font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerright ul li {
+    display: inline;
+    padding: 26px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.headerright ul li a {
+    color: black;
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerright ul li:hover .headerrightarrowdown {
+    text-align: end;
 }
+
+/* slider */
+.slider {
+    width: 100%;
+    height: 600px;
+}
+
+.sllider {
+    display: flex;
+    position: relative;
+    padding-top: 40px;
+}
+
+button .leftbuttonslider {
+    position: absolute;
+    top: 290px;
+    left: 211px;
+    font-size: 30px;
+    color: white;
+}
+
+button .rightbuttonslider {
+    position: absolute;
+    top: 290px;
+    right: 211px;
+    font-size: 30px;
+    color: white;
+}
+
+.none {
+    display: none;
+}
+
+.sliderimg {
+    width: 100%;
+    height: 20px;
+}
+
+.sliderimg img {
+    height: 500px;
+}
+
+.sliderhead {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(245, 243, 243);
+    text-align: center;
+    padding-top: 200px;
+}
+
+/* form */
+/* login */
+.loginformhead {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(113, 115, 118);
+}
+
+.loginform {
+    text-align: center;
+    width: 100%;
+    padding: 100px 10px;
+    border: 1px solid;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+
+}
+
+.email {
+    padding: 15px;
+}
+
+.email input {
+    padding: 10px 5px;
+    width: 50%;
+}
+
+.password {
+    padding: 15px;
+}
+
+.password input {
+    padding: 10px 5px;
+    width: 50%;
+}
+
+.loginbutton {
+    padding-top: 7px;
+
+}
+
+.loginbutton button {
+    padding: 10px 5px;
+    width: 50%;
+    background-color: rgb(22, 38, 213);
+}
+
+.loginbutton button a {
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+.signupbutton {
+    padding-top: 7px;
+    margin-top: 5px;
+
+}
+
+.signupbutton button {
+    padding: 10px 5px;
+    width: 50%;
+    background-color: rgb(22, 38, 213);
+
+}
+
+.signupbutton button a {
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+/* signup */
+.signupformhead {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(113, 115, 118);
+}
+
+.signupform {
+    text-align: center;
+    width: 100%;
+    padding: 100px 10px;
+    border: 1px solid;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.createpassword {
+    padding: 15px;
+}
+
+.createpassword input {
+    padding: 10px 5px;
+    width: 50%;
+}
+
+.confirmpassword {
+    padding: 15px;
+}
+
+.confirmpassword input {
+    padding: 10px 5px;
+    ;
+    width: 50%;
+}
+
+.thanksforresponse {
+    height: 365px;
+    width: 100%;
+    padding-top: 250px;
+    text-align: center;
+
+}
+
+.addedtocartresponse {
+    height: 365px;
+    width: 100%;
+    padding-top: 250px;
+    text-align: center;
+
+}
+
+/* api */
+/* products */
+.apidiff {
+    padding-top: 245px;
+}
+
+.productsheader {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    padding: 50px 0px;
+}
+
+.latestproducts {
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 76px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.categorybuttons ul li {
+    display: inline-block;
+    padding: 20px 20px 0px 20px;
+    color: gray;
+}
+
+.categorybuttons ul li button {
+    border: none;
+    background-color: white;
+    font-weight: 500;
+
+}
+
+.categorybuttons ul li button:hover {
+    color: red;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.products {
+    width: 22%;
+    box-shadow: 0px 0px 7px 2px;
+    margin: 20px;
+    padding: 10px;
+    height: 513px;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    height: 70px;
+}
+
+.title a {
+    color: black;
+    text-decoration: none;
+}
+
+.title a:hover {
+    color: rgb(219, 215, 208);
+}
+
+.productdetails {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.price {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.rating {
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.addtocart {
+    text-indent: 143px;
+    padding: 10px 5px 5px 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: none;
+}
+
+.addtocart p a {
+    color: #ef1696;
+    text-decoration: none;
+}
+
+.addtocart .addtocarticon {
+    color: #ef1696;
+}
+
+.products:hover .addtocart {
+    display: block;
+}
+
+/* product details */
+.sampleproductdetails {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    width: 80%;
+}
+
+.sampleproductdetailsimg {
+    width: 87%;
+    padding: 50px;
+}
+
+.sampleproduct {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.sampleprice {
+    font-size: 21px;
+    padding: 5px;
+    color: #1cbf28;
+}
+
+.sampleinfo {
+    margin-left: 0;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.samplebutton {
+    padding: 12px 5px;
+    width: 40%;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #1cbf28;
+    color: white;
+    border-color: #1cbf28;
+}
+
+/*  contact form  */
+.contactformmain {
+    background-color: rgb(113, 115, 118);
+    border: 1px solid rgb(113, 115, 118);
+    height: 99vh;
+}
+
+.contactform {
+    display: flex;
+    margin-top: 200px;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 20px 0px;
+    width: 80%;
+
+    background-color: white;
+}
+
+.getintouch {
+    text-align: center;
+}
+
+.contactformimghead {
+    width: 40%;
+}
+
+.contactformimg {
+    width: 95%;
+}
+
+.contactformdetails {
+    width: 41%;
+}
+
+.contactformdetails form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactformdet {
+    padding: 8px;
+    margin-left: 0;
+}
+
+.contactformdet input {
+    padding: 5px 14px;
+    width: 87%;
+    margin-top: 7px;
+}
+
+form .contactformdet #inquiryabout {
+    padding-bottom: 70px;
+    padding-right: 50px;
+}
+
+.contactsubmitbutton {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 98%;
+    background-color: #1cbf28;
+    border-color: #1cbf28;
+    color: white;
+
+}
+
+/* inbuild a[pi */
+
+.buildproducts {
+    width: 22%;
+    box-shadow: 0px 0px 7px 2px;
+    margin: 20px;
+    padding: 10px;
+    height: 515px;
+}
+
+.buildbrand {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.buildtitle {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    height: 70px;
+    text-transform: uppercase;
+}
+
+.buildtitle a {
+    color: black;
+    text-decoration: none;
+}
+
+.buildtitle:hover {
+    color: rgb(219, 215, 208);
+}
+
+.buildproductdetails {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.buildprice {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.addtocart {
+    text-indent: 143px;
+    padding: 10px 5px 5px 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: none;
+}
+
+.addtocart p a {
+    color: #ef1696;
+    text-decoration: none;
+}
+
+.addtocart .addtocarticon {
+    color: #ef1696;
+}
+
+.buildproducts:hover .addtocart {
+    display: block;
+}
+
